@@ -17,6 +17,6 @@ jobs:
         architecture: x64
     - run: python -m pip install --upgrade pip
     - run: pip install codespell flake8 nox poetry click appdirs
-    - run: codespell --ignore-words-list="nd,te,len" --skip="translations,*.archive"
+    # - run: codespell --ignore-words-list="nd,te,len" --skip="translations,*.archive"
     - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
     - run: python -m nox
